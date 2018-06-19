@@ -170,6 +170,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProductManagerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -234,6 +235,10 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\ProductManager\Index.cshtml" />
+    <Content Include="Views\ProductManager\Create.cshtml" />
+    <Content Include="Views\ProductManager\Edit.cshtml" />
+    <Content Include="Views\ProductManager\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -245,6 +250,24 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyActualShop.Core\MyActualShop.Core.csproj">
+      <Project>{ba5aa901-2509-41db-9f09-3602eda29ffa}</Project>
+      <Name>MyActualShop.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyActualShop.DataAccess.InMemory\MyActualShop.DataAccess.InMemory.csproj">
+      <Project>{55e3fd38-1aa5-4f67-991e-3e761f474ae7}</Project>
+      <Name>MyActualShop.DataAccess.InMemory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyActualShop.DataAccess.SQL\MyActualShop.DataAccess.SQL.csproj">
+      <Project>{6497802f-9287-4eee-95b1-eb630c38d2ce}</Project>
+      <Name>MyActualShop.DataAccess.SQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyActualShop.Services\MyActualShop.Services.csproj">
+      <Project>{307e3192-49ab-458b-9d1b-fe280da718f6}</Project>
+      <Name>MyActualShop.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
